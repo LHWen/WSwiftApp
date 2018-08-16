@@ -15,6 +15,7 @@
 		613AB3E82123F72D0097CAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613AB3E62123F72D0097CAE5 /* LaunchScreen.storyboard */; };
 		613AB3F32123F72D0097CAE5 /* WSwiftAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613AB3F22123F72D0097CAE5 /* WSwiftAppUITests.swift */; };
 		613AB3FF2123FD630097CAE5 /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613AB3FE2123FD630097CAE5 /* ColorUtility.swift */; };
+		61826DC921250A210075CE77 /* CheckPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DC821250A210075CE77 /* CheckPhoneNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		613AB3F22123F72D0097CAE5 /* WSwiftAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSwiftAppUITests.swift; sourceTree = "<group>"; };
 		613AB3F42123F72D0097CAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		613AB3FE2123FD630097CAE5 /* ColorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
+		61826DC821250A210075CE77 /* CheckPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPhoneNumber.swift; sourceTree = "<group>"; };
 		8018A7BD2BF6A09DDE460B5C /* Pods-WSwiftApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DAAA7E276334FB04CBB4A7EF /* Pods_WSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F113A6A20C86F5EAEC9171B6 /* Pods-WSwiftApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				613AB3FE2123FD630097CAE5 /* ColorUtility.swift */,
+				61826DC821250A210075CE77 /* CheckPhoneNumber.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				613AB3E02123F72C0097CAE5 /* ViewController.swift in Sources */,
 				613AB3DE2123F72C0097CAE5 /* AppDelegate.swift in Sources */,
+				61826DC921250A210075CE77 /* CheckPhoneNumber.swift in Sources */,
 				613AB3FF2123FD630097CAE5 /* ColorUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
