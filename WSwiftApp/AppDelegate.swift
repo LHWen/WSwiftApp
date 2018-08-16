@@ -15,8 +15,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        navigationBarSet()
+        
+        let vc = LoginViewController()
+        let nvc = UINavigationController(rootViewController: vc)
+        self.window?.rootViewController = nvc
+        self.window?.makeKeyAndVisible()
+        
         return true
+    }
+    
+    /** 导航栏样式设置 */
+    func navigationBarSet() {
+        
+        // 修改导航栏背景颜色
+        // 状态栏字体颜色
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        // 修改导航栏背景颜色
+        UINavigationBar.appearance().barTintColor = UIColor.init(red: 0, green: 191/255.0, blue: 1.0, alpha: 0.9)
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        // 修改导航栏按钮颜色
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().isTranslucent = false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

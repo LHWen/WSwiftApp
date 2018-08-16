@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		306A65D3C1713B0A1303A40A /* Pods_WSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAA7E276334FB04CBB4A7EF /* Pods_WSwiftApp.framework */; };
 		613AB3DE2123F72C0097CAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613AB3DD2123F72C0097CAE5 /* AppDelegate.swift */; };
-		613AB3E02123F72C0097CAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613AB3DF2123F72C0097CAE5 /* ViewController.swift */; };
 		613AB3E32123F72C0097CAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613AB3E12123F72C0097CAE5 /* Main.storyboard */; };
 		613AB3E52123F72D0097CAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 613AB3E42123F72D0097CAE5 /* Assets.xcassets */; };
 		613AB3E82123F72D0097CAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613AB3E62123F72D0097CAE5 /* LaunchScreen.storyboard */; };
 		613AB3F32123F72D0097CAE5 /* WSwiftAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613AB3F22123F72D0097CAE5 /* WSwiftAppUITests.swift */; };
 		613AB3FF2123FD630097CAE5 /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613AB3FE2123FD630097CAE5 /* ColorUtility.swift */; };
 		61826DC921250A210075CE77 /* CheckPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DC821250A210075CE77 /* CheckPhoneNumber.swift */; };
+		61826DD0212514240075CE77 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DCF212514240075CE77 /* BaseViewController.swift */; };
+		61826DD421251D530075CE77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD321251D530075CE77 /* LoginViewController.swift */; };
+		61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD7212528760075CE77 /* CreateViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,6 @@
 /* Begin PBXFileReference section */
 		613AB3DA2123F72C0097CAE5 /* WSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		613AB3DD2123F72C0097CAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		613AB3DF2123F72C0097CAE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		613AB3E22123F72C0097CAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		613AB3E42123F72D0097CAE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		613AB3E72123F72D0097CAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +42,9 @@
 		613AB3F42123F72D0097CAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		613AB3FE2123FD630097CAE5 /* ColorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
 		61826DC821250A210075CE77 /* CheckPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPhoneNumber.swift; sourceTree = "<group>"; };
+		61826DCF212514240075CE77 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		61826DD321251D530075CE77 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		61826DD7212528760075CE77 /* CreateViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewFactory.swift; sourceTree = "<group>"; };
 		8018A7BD2BF6A09DDE460B5C /* Pods-WSwiftApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DAAA7E276334FB04CBB4A7EF /* Pods_WSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F113A6A20C86F5EAEC9171B6 /* Pods-WSwiftApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,9 +92,10 @@
 		613AB3DC2123F72C0097CAE5 /* WSwiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				61826DCA2125132D0075CE77 /* Login */,
 				613AB3FD2123FD340097CAE5 /* Tools */,
+				61826DCB212513C10075CE77 /* Base */,
 				613AB3DD2123F72C0097CAE5 /* AppDelegate.swift */,
-				613AB3DF2123F72C0097CAE5 /* ViewController.swift */,
 				613AB3E12123F72C0097CAE5 /* Main.storyboard */,
 				613AB3E42123F72D0097CAE5 /* Assets.xcassets */,
 				613AB3E62123F72D0097CAE5 /* LaunchScreen.storyboard */,
@@ -113,8 +118,49 @@
 			children = (
 				613AB3FE2123FD630097CAE5 /* ColorUtility.swift */,
 				61826DC821250A210075CE77 /* CheckPhoneNumber.swift */,
+				61826DD7212528760075CE77 /* CreateViewFactory.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		61826DCA2125132D0075CE77 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				61826DD321251D530075CE77 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		61826DCB212513C10075CE77 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				61826DCE212513C10075CE77 /* BaseModel */,
+				61826DCD212513C10075CE77 /* BaseOperation */,
+				61826DCC212513C10075CE77 /* BaseViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		61826DCC212513C10075CE77 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61826DCF212514240075CE77 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		61826DCD212513C10075CE77 /* BaseOperation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseOperation;
+			sourceTree = "<group>";
+		};
+		61826DCE212513C10075CE77 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 		685CAE5CD99632A4A1B2FCD6 /* Frameworks */ = {
@@ -257,8 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				613AB3E02123F72C0097CAE5 /* ViewController.swift in Sources */,
+				61826DD421251D530075CE77 /* LoginViewController.swift in Sources */,
+				61826DD0212514240075CE77 /* BaseViewController.swift in Sources */,
 				613AB3DE2123F72C0097CAE5 /* AppDelegate.swift in Sources */,
+				61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */,
 				61826DC921250A210075CE77 /* CheckPhoneNumber.swift in Sources */,
 				613AB3FF2123FD630097CAE5 /* ColorUtility.swift in Sources */,
 			);
@@ -422,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4D937Q79X;
 				INFOPLIST_FILE = WSwiftApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4D937Q79X;
 				INFOPLIST_FILE = WSwiftApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
