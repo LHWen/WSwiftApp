@@ -7,13 +7,22 @@
 //
 
 import UIKit
+//import SnapKit
 
 class LoginViewController: BaseViewController {
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let loginView = LoginView.init(frame: self.view.bounds)
+        view.addSubview(loginView)
+        
     }
 
     override func didReceiveMemoryWarning() {

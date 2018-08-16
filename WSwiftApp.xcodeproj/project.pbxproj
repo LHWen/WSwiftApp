@@ -18,6 +18,7 @@
 		61826DD0212514240075CE77 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DCF212514240075CE77 /* BaseViewController.swift */; };
 		61826DD421251D530075CE77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD321251D530075CE77 /* LoginViewController.swift */; };
 		61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD7212528760075CE77 /* CreateViewFactory.swift */; };
+		61826DDA212559940075CE77 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD9212559940075CE77 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		61826DCF212514240075CE77 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		61826DD321251D530075CE77 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61826DD7212528760075CE77 /* CreateViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewFactory.swift; sourceTree = "<group>"; };
+		61826DD9212559940075CE77 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8018A7BD2BF6A09DDE460B5C /* Pods-WSwiftApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DAAA7E276334FB04CBB4A7EF /* Pods_WSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F113A6A20C86F5EAEC9171B6 /* Pods-WSwiftApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				61826DD321251D530075CE77 /* LoginViewController.swift */,
+				61826DD9212559940075CE77 /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				613AB3D62123F72C0097CAE5 /* Sources */,
 				613AB3D72123F72C0097CAE5 /* Frameworks */,
 				613AB3D82123F72C0097CAE5 /* Resources */,
+				1E08115B64DF9A320CFED8D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +282,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E08115B64DF9A320CFED8D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E3174E6D8320E92D05C39B91 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61826DD421251D530075CE77 /* LoginViewController.swift in Sources */,
+				61826DDA212559940075CE77 /* LoginView.swift in Sources */,
 				61826DD0212514240075CE77 /* BaseViewController.swift in Sources */,
 				613AB3DE2123F72C0097CAE5 /* AppDelegate.swift in Sources */,
 				61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */,
