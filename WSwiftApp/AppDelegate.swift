@@ -39,6 +39,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().isTranslucent = false
     }
+    
+    /** 重新登录 */
+    func relogin() {
+        
+        DispatchQueue.main.async {
+            let loginVC: LoginViewController = LoginViewController()
+            let nVC: UINavigationController = UINavigationController.init(rootViewController: loginVC)
+            self.window!.rootViewController = nVC
+            self.window!.makeKeyAndVisible()
+            }
+    }
+    
+    /** window 切换根目录 */
+    func changeRootViewController(withVC: UIViewController) {
+        DispatchQueue.main.async {
+            self.window!.rootViewController = withVC
+        }
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -19,6 +19,9 @@
 		61826DD421251D530075CE77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD321251D530075CE77 /* LoginViewController.swift */; };
 		61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD7212528760075CE77 /* CreateViewFactory.swift */; };
 		61826DDA212559940075CE77 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD9212559940075CE77 /* LoginView.swift */; };
+		618AD15C212A952B00289019 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AD15B212A952B00289019 /* HomeViewController.swift */; };
+		618AD160212A9D9100289019 /* PersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AD15F212A9D9100289019 /* PersonalCenterViewController.swift */; };
+		618AD162212A9D9D00289019 /* AppContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AD161212A9D9D00289019 /* AppContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		61826DD321251D530075CE77 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61826DD7212528760075CE77 /* CreateViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewFactory.swift; sourceTree = "<group>"; };
 		61826DD9212559940075CE77 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		618AD15B212A952B00289019 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		618AD15F212A9D9100289019 /* PersonalCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCenterViewController.swift; sourceTree = "<group>"; };
+		618AD161212A9D9D00289019 /* AppContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContactViewController.swift; sourceTree = "<group>"; };
 		8018A7BD2BF6A09DDE460B5C /* Pods-WSwiftApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DAAA7E276334FB04CBB4A7EF /* Pods_WSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F113A6A20C86F5EAEC9171B6 /* Pods-WSwiftApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 		613AB3DC2123F72C0097CAE5 /* WSwiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				618AD15E212A9D7800289019 /* Center */,
+				618AD15D212A9D7800289019 /* Contact */,
+				618AD15A212A950A00289019 /* Home */,
 				61826DCA2125132D0075CE77 /* Login */,
 				613AB3FD2123FD340097CAE5 /* Tools */,
 				61826DCB212513C10075CE77 /* Base */,
@@ -164,6 +173,30 @@
 			children = (
 			);
 			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		618AD15A212A950A00289019 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				618AD15B212A952B00289019 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		618AD15D212A9D7800289019 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				618AD161212A9D9D00289019 /* AppContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		618AD15E212A9D7800289019 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				618AD15F212A9D9100289019 /* PersonalCenterViewController.swift */,
+			);
+			path = Center;
 			sourceTree = "<group>";
 		};
 		685CAE5CD99632A4A1B2FCD6 /* Frameworks */ = {
@@ -327,9 +360,12 @@
 			files = (
 				61826DD421251D530075CE77 /* LoginViewController.swift in Sources */,
 				61826DDA212559940075CE77 /* LoginView.swift in Sources */,
+				618AD160212A9D9100289019 /* PersonalCenterViewController.swift in Sources */,
 				61826DD0212514240075CE77 /* BaseViewController.swift in Sources */,
+				618AD15C212A952B00289019 /* HomeViewController.swift in Sources */,
 				613AB3DE2123F72C0097CAE5 /* AppDelegate.swift in Sources */,
 				61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */,
+				618AD162212A9D9D00289019 /* AppContactViewController.swift in Sources */,
 				61826DC921250A210075CE77 /* CheckPhoneNumber.swift in Sources */,
 				613AB3FF2123FD630097CAE5 /* ColorUtility.swift in Sources */,
 			);

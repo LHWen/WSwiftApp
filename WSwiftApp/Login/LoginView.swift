@@ -35,6 +35,10 @@ class LoginView: UIView {
     // 登录按钮
     var loginBtn: UIButton?
     
+    // 闭包回调
+    typealias loginButtonCompletion = (_ userName: String, _ passWord: String) -> Void
+    var loginCompletion: loginButtonCompletion?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -103,6 +107,7 @@ class LoginView: UIView {
             })
             
             userNameTextF = UITextField.init()
+            userNameTextF?.delegate = self
             userNameTextF?.isSecureTextEntry = false
             userNameTextF?.backgroundColor = .white
             userNameTextF?.attributedPlaceholder = NSAttributedString.init(string: "请输入用户名", attributes: [NSAttributedStringKey.foregroundColor: ColorUtility.colorWithHexString(toConvert: "#cccccc", a: 1.0)])
@@ -159,6 +164,7 @@ class LoginView: UIView {
             })
             
             passWordTextF = UITextField.init()
+            passWordTextF?.delegate = self
             passWordTextF?.isSecureTextEntry = true
             passWordTextF?.backgroundColor = .white
             passWordTextF?.attributedPlaceholder = NSAttributedString.init(string: "请输入密码", attributes: [NSAttributedStringKey.foregroundColor: ColorUtility.colorWithHexString(toConvert: "#cccccc", a: 1.0)])
@@ -203,6 +209,7 @@ class LoginView: UIView {
             loginBtn?.titleLabel?.font = UIFont.systemFont(ofSize: kLoginBtnFSize)
             loginBtn?.layer.cornerRadius = 4.0
             loginBtn?.layer.masksToBounds = true
+            loginBtn?.addTarget(self, action: #selector(loginButtonClick(_:)), for: .touchUpInside)
             self.addSubview(loginBtn!)
             loginBtn?.snp.makeConstraints({ (make) -> Void in
                 make.top.equalTo(passWordView!.snp.bottom).offset(kLoginBtnTop)
@@ -222,6 +229,27 @@ class LoginView: UIView {
         } else {
             passWordTextF?.isSecureTextEntry = true
         }
+    }
+    
+    @objc func loginButtonClick(_ sender: UIButton) {
+        
+        userNameTextF?.resignFirstResponder()
+        passWordTextF?.resignFirstResponder()
+        
+        if loginCompletion != nil {
+            loginCompletion?((userNameTextF?.text)!, (passWordTextF?.text)!)
+        }
+    }
+    
+}
+
+extension LoginView: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        return true
     }
     
 }
