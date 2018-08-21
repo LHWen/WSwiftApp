@@ -33,7 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 状态栏字体颜色
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         // 修改导航栏背景颜色
-        UINavigationBar.appearance().barTintColor = UIColor.init(red: 0, green: 191/255.0, blue: 1.0, alpha: 0.9)
+//        UINavigationBar.appearance().barTintColor = UIColor.init(red: 0, green: 191/255.0, blue: 1.0, alpha: 0.9)
+        UINavigationBar.appearance().barTintColor = ColorUtility.colorWithHexString(toConvert: "#1aa0ed", a: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         // 修改导航栏按钮颜色
         UINavigationBar.appearance().tintColor = UIColor.white

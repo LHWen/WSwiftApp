@@ -40,7 +40,6 @@ class LoginViewController: BaseViewController {
             let nav3 = UINavigationController.init(rootViewController: PersonalCenterViewController())
             nav3.tabBarItem = self.barItem(title: "个人中心", image: UIImage(named: "tabbar_icon_mycenter_defult")!, sImage: UIImage(named: "tabbar_icon_mycenter_selected")!)
             
-            
             let tabBarVC = UITabBarController()
             // 是否去掉分割线色设置
 //            tabBarVC.tabBar.shadowImage = ColorUtility.createImageWithColor(color: .white)

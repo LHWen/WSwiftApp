@@ -22,6 +22,9 @@
 		618AD15C212A952B00289019 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AD15B212A952B00289019 /* HomeViewController.swift */; };
 		618AD160212A9D9100289019 /* PersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AD15F212A9D9100289019 /* PersonalCenterViewController.swift */; };
 		618AD162212A9D9D00289019 /* AppContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AD161212A9D9D00289019 /* AppContactViewController.swift */; };
+		61D7AE13212BB8DB00F2610E /* PersonalCenterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7AE12212BB8DB00F2610E /* PersonalCenterHeaderView.swift */; };
+		61D7AE15212BC14300F2610E /* RoleInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7AE14212BC14300F2610E /* RoleInfoTableViewCell.swift */; };
+		61D7AE17212BE3EA00F2610E /* FunctionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7AE16212BE3EA00F2610E /* FunctionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		618AD15B212A952B00289019 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		618AD15F212A9D9100289019 /* PersonalCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCenterViewController.swift; sourceTree = "<group>"; };
 		618AD161212A9D9D00289019 /* AppContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContactViewController.swift; sourceTree = "<group>"; };
+		61D7AE12212BB8DB00F2610E /* PersonalCenterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCenterHeaderView.swift; sourceTree = "<group>"; };
+		61D7AE14212BC14300F2610E /* RoleInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleInfoTableViewCell.swift; sourceTree = "<group>"; };
+		61D7AE16212BE3EA00F2610E /* FunctionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionTableViewCell.swift; sourceTree = "<group>"; };
 		8018A7BD2BF6A09DDE460B5C /* Pods-WSwiftApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DAAA7E276334FB04CBB4A7EF /* Pods_WSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F113A6A20C86F5EAEC9171B6 /* Pods-WSwiftApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSwiftApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSwiftApp/Pods-WSwiftApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +201,9 @@
 			isa = PBXGroup;
 			children = (
 				618AD15F212A9D9100289019 /* PersonalCenterViewController.swift */,
+				61D7AE12212BB8DB00F2610E /* PersonalCenterHeaderView.swift */,
+				61D7AE14212BC14300F2610E /* RoleInfoTableViewCell.swift */,
+				61D7AE16212BE3EA00F2610E /* FunctionTableViewCell.swift */,
 			);
 			path = Center;
 			sourceTree = "<group>";
@@ -361,13 +370,16 @@
 				61826DD421251D530075CE77 /* LoginViewController.swift in Sources */,
 				61826DDA212559940075CE77 /* LoginView.swift in Sources */,
 				618AD160212A9D9100289019 /* PersonalCenterViewController.swift in Sources */,
+				61D7AE15212BC14300F2610E /* RoleInfoTableViewCell.swift in Sources */,
 				61826DD0212514240075CE77 /* BaseViewController.swift in Sources */,
 				618AD15C212A952B00289019 /* HomeViewController.swift in Sources */,
+				61D7AE17212BE3EA00F2610E /* FunctionTableViewCell.swift in Sources */,
 				613AB3DE2123F72C0097CAE5 /* AppDelegate.swift in Sources */,
 				61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */,
 				618AD162212A9D9D00289019 /* AppContactViewController.swift in Sources */,
 				61826DC921250A210075CE77 /* CheckPhoneNumber.swift in Sources */,
 				613AB3FF2123FD630097CAE5 /* ColorUtility.swift in Sources */,
+				61D7AE13212BB8DB00F2610E /* PersonalCenterHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
