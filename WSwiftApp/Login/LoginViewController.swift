@@ -42,7 +42,10 @@ class LoginViewController: BaseViewController {
             
             let tabBarVC = UITabBarController()
             // 是否去掉分割线色设置
-//            tabBarVC.tabBar.shadowImage = ColorUtility.createImageWithColor(color: .white)
+            tabBarVC.tabBar.shadowImage = ColorUtility.createImageWithColor(color: .white)
+            tabBarVC.tabBar.backgroundImage = ColorUtility.createImageWithColor(color: .white)
+            // 设置不透明
+            tabBarVC.tabBar.isTranslucent = false
             tabBarVC.viewControllers = [nav1, nav2, nav3]
             // 切换跟视图
             let appDelegate = UIApplication.shared.delegate as! AppDelegate

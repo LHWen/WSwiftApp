@@ -119,7 +119,7 @@ class CreateViewFactory: NSObject {
     class func p_setWithTable(frame: CGRect, style: UITableViewStyle) -> UITableView {
         
         let tableView: UITableView = UITableView(frame: frame, style: style)
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = ColorUtility.colorWithHexString(toConvert: "efeff4", a: 1.0)
         tableView.estimatedRowHeight = 0
         tableView.estimatedSectionFooterHeight = 0
         tableView.estimatedSectionHeaderHeight = 0
