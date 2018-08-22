@@ -25,6 +25,12 @@ class HomeCollectionViewCell: UICollectionViewCell {
         p_setContainerView()
         p_setIconAndTitleLayout()
         p_setupleftAndBottomLineView()
+        
+        if self.isHighlighted {
+            iconView?.alpha = 0.7
+        } else {
+            iconView?.alpha = 1.0
+        }
     }
     
     private func p_setContainerView() {
