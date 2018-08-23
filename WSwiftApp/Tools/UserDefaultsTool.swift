@@ -8,6 +8,7 @@
 
 import UIKit
 
+// 本地存储
 class UserDefaultsTool: NSObject {
 
     /** 存储string */
