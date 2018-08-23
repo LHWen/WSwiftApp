@@ -23,7 +23,7 @@ class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         p_setHeaderView()
         p_setCollectionViewLayout()
     }

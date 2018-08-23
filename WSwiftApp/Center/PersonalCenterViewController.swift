@@ -130,4 +130,9 @@ extension PersonalCenterViewController: UITableViewDelegate, UITableViewDataSour
         
         return footerView
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+            print("----- table cell click \(indexPath.row) ----")
+    }
 }
