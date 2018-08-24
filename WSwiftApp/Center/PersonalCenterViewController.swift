@@ -12,8 +12,9 @@ class PersonalCenterViewController: BaseViewController {
     
     private let roleTitleArr = ["角色", "OA账号", "部门"]
     private let userRoleArr = ["管理员", "wen", "广州分公司"]
-    private let funcIconName = ["mine_password", "mine_information", "mine_share", "mine_versions", "mine_define"]
-    private let funcTitleName = ["修改密码", "消息中心", "系统分享", "版本信息", "首页菜单管理"]
+//    private let funcIconName = ["mine_password", "mine_information", "mine_share", "mine_versions", "mine_define"]
+//    private let funcTitleName = ["修改密码", "消息中心", "系统分享", "版本信息", "首页菜单管理"]
+    private let funcModel: NSArray = PersonalCenterModel.personalCenterFunction()
     
     private var _tableView: UITableView?   // 定义tableView
     private let kRoleCell: String = "RoleInfoTableViewCell"
@@ -74,7 +75,8 @@ extension PersonalCenterViewController: UITableViewDelegate, UITableViewDataSour
         if section == 0 {
             return roleTitleArr.count
         } else {
-            return funcIconName.count
+//            return funcIconName.count
+            return funcModel.count
         }
     }
     
@@ -97,8 +99,11 @@ extension PersonalCenterViewController: UITableViewDelegate, UITableViewDataSour
         cell = tableView.dequeueReusableCell(withIdentifier: kFunctionCell)!
         let fCell = cell as?FunctionTableViewCell
         fCell?.selectionStyle = UITableViewCellSelectionStyle.default
-        fCell?.iconImgView?.image = UIImage(named: funcIconName[indexPath.row])
-        fCell?.titleLbl?.text = funcTitleName[indexPath.row]
+        let model: PersonalCenterModel = funcModel[indexPath.row] as! PersonalCenterModel
+        fCell?.iconImgView?.image = UIImage(named: model._iconName!)
+        fCell?.titleLbl?.text = model._titleName!
+//        fCell?.iconImgView?.image = UIImage(named: funcIconName[indexPath.row])
+//        fCell?.titleLbl?.text = funcTitleName[indexPath.row]
         
         return fCell!
     }
@@ -138,7 +143,6 @@ extension PersonalCenterViewController: UITableViewDelegate, UITableViewDataSour
         if indexPath.section == 1 && indexPath.row == 1 {
             
             let vc = NoticeViewController()
-//            vc.edgesForExtendedLayout = UIRectEdge.all
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         }

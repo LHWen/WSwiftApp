@@ -24,15 +24,15 @@ class NoticeViewController: BaseViewController {
         
         let testT: String = "彼岸花开开彼岸，忘川河畔尔忘川。奈何桥头空奈何，三生石上写三生。三途忘川断生死，彼岸花开又轮回。"
         
-        p_setTestLable(text: testT)
-        p_setSpacingTestLable(text: testT)
+        p_setTestLable(text: testT, 23.0)
+        p_setSpacingTestLable(text: testT, 23.0)
     }
     
-    private func p_setTestLable(text: String) {
+    private func p_setTestLable(text: String, _ fSize: CGFloat) {
         
-        let textHeigh: CGFloat = CalculateTextHeight.textHeight(text, self.view.bounds.size.width - 26.0, 16.0)
+        let textHeigh: CGFloat = CalculateTextHeight.textHeight(text, self.view.bounds.size.width - 26.0, fSize)
         
-        let label: UILabel = CreateViewFactory.p_setLable(text, 16.0, .green, .black, .left, 0, 0)
+        let label: UILabel = CreateViewFactory.p_setLable(text, fSize, .green, .black, .left, 0, 0)
         self.view.addSubview(label)
         label.snp.makeConstraints { (make) -> Void in
             make.top.left.equalTo(13.0)
@@ -41,12 +41,12 @@ class NoticeViewController: BaseViewController {
         }
     }
     
-    private func p_setSpacingTestLable(text: String) {
+    private func p_setSpacingTestLable(text: String, _ fSize: CGFloat) {
         
-        let textHeigh: CGFloat = CalculateTextHeight.textHeight(text, self.view.bounds.size.width - 26.0, 16.0)
-        let textH: CGFloat = CalculateTextHeight.spaceTextHeight(text, self.view.bounds.size.width - 26.0, 16.0, 8.0)
+        let textHeigh: CGFloat = CalculateTextHeight.textHeight(text, self.view.bounds.size.width - 26.0, fSize)
+        let textH: CGFloat = CalculateTextHeight.spaceTextHeight(text, self.view.bounds.size.width - 26.0, fSize, 8.0)
         
-        let tLable: UILabel = CreateViewFactory.p_setLable(text, 16.0, .orange, .black, .left, 0, 0)
+        let tLable: UILabel = CreateViewFactory.p_setLable(text, fSize, .orange, .black, .left, 0, 0)
         
         let pstyle: NSMutableParagraphStyle = NSMutableParagraphStyle.init()
         pstyle.lineSpacing = 8.0
