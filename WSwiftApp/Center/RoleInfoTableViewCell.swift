@@ -9,7 +9,6 @@
 import UIKit
 
 // 角色信息
-
 class RoleInfoTableViewCell: UITableViewCell {
     
     public var titleLbl: UILabel?

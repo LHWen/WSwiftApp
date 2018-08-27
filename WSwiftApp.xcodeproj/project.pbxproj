@@ -25,6 +25,7 @@
 		61826DD421251D530075CE77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD321251D530075CE77 /* LoginViewController.swift */; };
 		61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD7212528760075CE77 /* CreateViewFactory.swift */; };
 		61826DDA212559940075CE77 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61826DD9212559940075CE77 /* LoginView.swift */; };
+		618878C72133ECC700FF6291 /* RefreshTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618878C62133ECC700FF6291 /* RefreshTableViewController.swift */; };
 		618AD15C212A952B00289019 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AD15B212A952B00289019 /* HomeViewController.swift */; };
 		618AD160212A9D9100289019 /* PersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AD15F212A9D9100289019 /* PersonalCenterViewController.swift */; };
 		618AD162212A9D9D00289019 /* AppContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AD161212A9D9D00289019 /* AppContactViewController.swift */; };
@@ -66,6 +67,7 @@
 		61826DD321251D530075CE77 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61826DD7212528760075CE77 /* CreateViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewFactory.swift; sourceTree = "<group>"; };
 		61826DD9212559940075CE77 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		618878C62133ECC700FF6291 /* RefreshTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTableViewController.swift; sourceTree = "<group>"; };
 		618AD15B212A952B00289019 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		618AD15F212A9D9100289019 /* PersonalCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCenterViewController.swift; sourceTree = "<group>"; };
 		618AD161212A9D9D00289019 /* AppContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContactViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				618AD15B212A952B00289019 /* HomeViewController.swift */,
 				61427C20212CFDDA0056A724 /* HomeCollectionViewCell.swift */,
+				618878C62133ECC700FF6291 /* RefreshTableViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				61D7AE17212BE3EA00F2610E /* FunctionTableViewCell.swift in Sources */,
 				613AB3DE2123F72C0097CAE5 /* AppDelegate.swift in Sources */,
 				61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */,
+				618878C72133ECC700FF6291 /* RefreshTableViewController.swift in Sources */,
 				6174BB95212E8F4E001205EE /* CalculateTextHeight.swift in Sources */,
 				618AD162212A9D9D00289019 /* AppContactViewController.swift in Sources */,
 				61826DC921250A210075CE77 /* CheckPhoneNumber.swift in Sources */,

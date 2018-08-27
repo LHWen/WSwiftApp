@@ -97,7 +97,7 @@ extension PersonalCenterViewController: UITableViewDelegate, UITableViewDataSour
         
         tableView.separatorStyle = .singleLine
         cell = tableView.dequeueReusableCell(withIdentifier: kFunctionCell)!
-        let fCell = cell as?FunctionTableViewCell
+        let fCell = cell as? FunctionTableViewCell
         fCell?.selectionStyle = UITableViewCellSelectionStyle.default
         let model: PersonalCenterModel = funcModel[indexPath.row] as! PersonalCenterModel
         fCell?.iconImgView?.image = UIImage(named: model._iconName!)

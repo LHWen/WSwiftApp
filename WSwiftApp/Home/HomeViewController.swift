@@ -107,5 +107,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         print("click collection view item row is \(indexPath.row)")
+        
+        switch indexPath.row {
+        case 0:
+            let vc = RefreshTableViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        default:
+            print("click item \(indexPath.row)")
+        }
     }
 }
