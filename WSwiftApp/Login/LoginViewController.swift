@@ -52,7 +52,6 @@ class LoginViewController: BaseViewController {
             appDelegate.changeRootViewController(withVC: tabBarVC)
         }
         view.addSubview(loginView!)
-        
     }
     
     func barItem(title: String, image: UIImage, sImage: UIImage) -> UITabBarItem {
