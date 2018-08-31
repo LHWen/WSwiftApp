@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		306A65D3C1713B0A1303A40A /* Pods_WSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAA7E276334FB04CBB4A7EF /* Pods_WSwiftApp.framework */; };
+		610A69EA21392E5C00CFA583 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610A69E921392E5C00CFA583 /* StringUtils.swift */; };
 		613AB3DE2123F72C0097CAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613AB3DD2123F72C0097CAE5 /* AppDelegate.swift */; };
 		613AB3E32123F72C0097CAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613AB3E12123F72C0097CAE5 /* Main.storyboard */; };
 		613AB3E52123F72D0097CAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 613AB3E42123F72D0097CAE5 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		610A69E921392E5C00CFA583 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		613AB3DA2123F72C0097CAE5 /* WSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		613AB3DD2123F72C0097CAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		613AB3E22123F72C0097CAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				61427C24212D65D60056A724 /* DottedLine.swift */,
 				6174BB92212E4933001205EE /* UserDefaultsTool.swift */,
 				6174BB94212E8F4E001205EE /* CalculateTextHeight.swift */,
+				610A69E921392E5C00CFA583 /* StringUtils.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				6174BB93212E4933001205EE /* UserDefaultsTool.swift in Sources */,
 				618AD15C212A952B00289019 /* HomeViewController.swift in Sources */,
 				61427C25212D65D60056A724 /* DottedLine.swift in Sources */,
+				610A69EA21392E5C00CFA583 /* StringUtils.swift in Sources */,
 				61D7AE17212BE3EA00F2610E /* FunctionTableViewCell.swift in Sources */,
 				613AB3DE2123F72C0097CAE5 /* AppDelegate.swift in Sources */,
 				61826DD8212528760075CE77 /* CreateViewFactory.swift in Sources */,
